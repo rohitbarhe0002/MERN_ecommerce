@@ -26,7 +26,7 @@ router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
 
 
     try {
-        console.log("jjjjffd");
+        console.log("jjjjffd  fgfg  ");
         console.log(req.params.id);
         const updatedOrder = await Order.findByIdAndUpdate(req.params.id, {
             $set: req.body
